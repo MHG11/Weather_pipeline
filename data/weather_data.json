@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Palmas",
+        "local_names": {
+            "he": "\u05e4\u05dc\u05de\u05e1",
+            "ka": "\u10de\u10d0\u10da\u10db\u10d0\u10e1\u10d8",
+            "lt": "Palmasas",
+            "pl": "Palmas",
+            "pt": "Palmas",
+            "ar": "\u0628\u0644\u0645\u0633",
+            "be": "\u041f\u0430\u043b\u043c\u0430\u0441",
+            "uk": "\u041f\u0430\u043b\u043c\u0430\u0441",
+            "sr": "\u041f\u0430\u043b\u043c\u0430\u0441",
+            "mk": "\u041f\u0430\u043b\u043c\u0430\u0448",
+            "mr": "\u092a\u093e\u0932\u094d\u092e\u093e\u0938",
+            "ru": "\u041f\u0430\u043b\u043c\u0430\u0441",
+            "lv": "Palmasa",
+            "ko": "\ud30c\uc6b0\ub9c8\uc2a4",
+            "fa": "\u067e\u0627\u0644\u0645\u0627\u0633",
+            "zh": "\u5e15\u5c14\u9a6c\u65af",
+            "de": "Palmas",
+            "bg": "\u041f\u0430\u043b\u043c\u0430\u0441",
+            "kk": "\u041f\u0430\u043b\u043c\u0430\u0441",
+            "tg": "\u041f\u0430\u043b\u043c\u0430\u0441",
+            "en": "Palmas",
+            "hy": "\u054a\u0561\u056c\u0574\u0561\u057d",
+            "ja": "\u30d1\u30eb\u30de\u30b9"
+        },
+        "lat": -10.1837852,
+        "lon": -48.3336423,
+        "country": "BR",
+        "state": "Tocantins"
+    }
+]
