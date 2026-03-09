@@ -4,9 +4,6 @@ from pathlib import Path
 import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s ')
 
-api_key = '20c492582a18f38fd4a10d93701a5dd5'
-url = f'http://api.openweathermap.org/geo/1.0/direct?q=Palmas,Tocantins,BR&appid={api_key}'
-
 
 def extract_weather_data(url:str) -> list:
     response = requests.get(url)
@@ -29,4 +26,3 @@ def extract_weather_data(url:str) -> list:
     logging.info(f'Arquivo salvo em {output_path}')
     return data
 
-extract_weather_data(url)
