@@ -6,5 +6,8 @@ dist/
 wheels/
 *.egg-info
 
+
+airflow.cfg
+
 # Virtual environments
 .venv

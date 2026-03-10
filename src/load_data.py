@@ -20,12 +20,12 @@ host = 'host.docker.internal'
 def get_engine():
     logging.info(f' conectado em {host}:5432/{database}')
     return create_engine(
-        f"postgres+psycopg2://{user}:{quote_plus(password)}@{host}:5432/{database}"
+        f"postgresql+psycopg2://{user}:{quote_plus(password)}@{host}:5432/{database}"
     )
     
 engine = get_engine()
 
-def load_data(table_name:str, df):
+def load_weather_data(table_name:str, df):
     df.to_sql(
         name=table_name,
         con=engine,
