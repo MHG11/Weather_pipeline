@@ -27,7 +27,7 @@ url = f'https://api.openweathermap.org/data/2.5/weather?q=Palmas,BR&units=metric
     },
     description='Pipeline ETL - Clima Palmas',
     schedule='0 */1 * * *',
-    start_date=datetime(2026, 3, 10),
+    start_date=datetime(2026, 3, 12),
     catchup=False,
     tags=['weather', 'etl', 'tempo']
 )

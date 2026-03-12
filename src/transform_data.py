@@ -8,6 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 path_name = Path(__file__).parent.parent / 'data' / 'weather_data.json'
 columns_name_to_drop = ['weather', 'weather_icon', 'sys.type']
 columns_to_rename = {
+    "dt": "datetime",
     "name": "city_name",
     "cod": "code",
     "coord.lon": "longitude",
@@ -36,7 +37,7 @@ def create_dataframe(path_name:str) -> pd.DataFrame:
 
     path = path_name
 
-    if not path.exist():
+    if not path.exists():
         raise FileNotFoundError(f'O Arquivo não foi encontrado: {path}')
     
     with open(path) as f:
