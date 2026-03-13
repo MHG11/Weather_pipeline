@@ -1,0 +1,14 @@
+{"timestamp":"2026-03-13T14:26:59.901801Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-13T14:26:59.902772Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-13T14:26:59.940273Z","level":"info","event":" conectado em postgres:5432/weather_data_pipeline","logger":"root","filename":"load_data.py","lineno":22}
+{"timestamp":"2026-03-13T14:26:59.951265Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:26:59.951382Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:27:04.408443Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:04.408643Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:04.408846Z","level":"info","event":"Current task name:extract","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:04.408909Z","level":"info","event":"Dag name:weather_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:04.845190Z","level":"info","event":"Arquivo salvo em data/weather_data.json","logger":"root","filename":"extract_data.py","lineno":26}
+{"timestamp":"2026-03-13T14:27:04.847529Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-13T14:27:04.864613Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:04.864790Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:04.865947Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): extract>","logger":"task.stdout"}

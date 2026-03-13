@@ -14,13 +14,14 @@ load_dotenv(env_path)
 user = os.getenv('user')
 password = os.getenv('password')
 database = os.getenv('database')
-host = 'host.docker.internal'
+host = os.getenv('host', 'postgres')
+port = os.getenv('port', '5432')
 
 
 def get_engine():
-    logging.info(f' conectado em {host}:5432/{database}')
+    logging.info(f' conectado em {host}:{port}/{database}')
     return create_engine(
-        f"postgresql+psycopg2://{user}:{quote_plus(password)}@{host}:5432/{database}"
+        f"postgresql+psycopg2://{user}:{quote_plus(password)}@{host}:{port}/{database}"
     )
     
 engine = get_engine()

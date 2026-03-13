@@ -1,0 +1,88 @@
+{"timestamp":"2026-03-13T14:02:21.301586Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-13T14:02:21.302776Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-13T14:02:21.324220Z","level":"info","event":" conectado em postgres:5432/weather_data_pipeline","logger":"root","filename":"load_data.py","lineno":22}
+{"timestamp":"2026-03-13T14:02:21.339096Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:02:21.339332Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:02:21.373173Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:02:21.373362Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:02:21.373586Z","level":"info","event":"Current task name:transform","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:02:21.373668Z","level":"info","event":"Dag name:weather_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:02:21.374940Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:02:21.375028Z","level":"info","event":" Iniciando as transformações.","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:02:21.376894Z","level":"info","event":"\n DataFrame criado com 1 linhas(s)","logger":"root","filename":"transform_data.py","lineno":48}
+{"timestamp":"2026-03-13T14:02:21.379283Z","level":"info","event":"\n Coluna 'weather' normalizada - 30 colunas","logger":"root","filename":"transform_data.py","lineno":62}
+{"timestamp":"2026-03-13T14:02:21.379423Z","level":"info","event":"\n Removendo colunas: ['weather', 'weather_icon', 'sys.type']","logger":"root","filename":"transform_data.py","lineno":66}
+{"timestamp":"2026-03-13T14:02:21.380406Z","level":"info","event":" Colunas removidas - 27 colunas restantes","logger":"root","filename":"transform_data.py","lineno":68}
+{"timestamp":"2026-03-13T14:02:21.381048Z","level":"info","event":"Colunas renomeadas.","logger":"root","filename":"transform_data.py","lineno":73}
+{"timestamp":"2026-03-13T14:02:21.384866Z","level":"info","event":"Colunas convetidas para datetime.","logger":"root","filename":"transform_data.py","lineno":80}
+{"timestamp":"2026-03-13T14:02:21.385078Z","level":"info","event":"Transformações concluidas!","logger":"root","filename":"transform_data.py","lineno":91}
+{"timestamp":"2026-03-13T14:02:21.428780Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-13T14:02:21.461909Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:02:21.462105Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:02:21.462472Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): transform>","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.204906Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-13T14:27:06.205807Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-13T14:27:06.227882Z","level":"info","event":" conectado em postgres:5432/weather_data_pipeline","logger":"root","filename":"load_data.py","lineno":22}
+{"timestamp":"2026-03-13T14:27:06.239163Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:27:06.239412Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:27:06.267255Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.267478Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.267663Z","level":"info","event":"Current task name:transform","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.267730Z","level":"info","event":"Dag name:weather_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.269148Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.269332Z","level":"info","event":" Iniciando as transformações.","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.270525Z","level":"info","event":"\n DataFrame criado com 1 linhas(s)","logger":"root","filename":"transform_data.py","lineno":48}
+{"timestamp":"2026-03-13T14:27:06.273066Z","level":"info","event":"\n Coluna 'weather' normalizada - 30 colunas","logger":"root","filename":"transform_data.py","lineno":62}
+{"timestamp":"2026-03-13T14:27:06.273285Z","level":"info","event":"\n Removendo colunas: ['weather', 'weather_icon', 'sys.type']","logger":"root","filename":"transform_data.py","lineno":66}
+{"timestamp":"2026-03-13T14:27:06.274157Z","level":"info","event":" Colunas removidas - 27 colunas restantes","logger":"root","filename":"transform_data.py","lineno":68}
+{"timestamp":"2026-03-13T14:27:06.274762Z","level":"info","event":"Colunas renomeadas.","logger":"root","filename":"transform_data.py","lineno":73}
+{"timestamp":"2026-03-13T14:27:06.279670Z","level":"info","event":"Colunas convetidas para datetime.","logger":"root","filename":"transform_data.py","lineno":80}
+{"timestamp":"2026-03-13T14:27:06.279811Z","level":"info","event":"Transformações concluidas!","logger":"root","filename":"transform_data.py","lineno":91}
+{"timestamp":"2026-03-13T14:27:06.322477Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-13T14:27:06.347904Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.348113Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:27:06.348618Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): transform>","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.544460Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-13T14:44:18.545241Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-13T14:44:18.560975Z","level":"info","event":" conectado em postgres:5432/weather_data_pipeline","logger":"root","filename":"load_data.py","lineno":22}
+{"timestamp":"2026-03-13T14:44:18.570625Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:44:18.570776Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:44:18.590993Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.591152Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.591354Z","level":"info","event":"Current task name:transform","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.591453Z","level":"info","event":"Dag name:weather_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.592619Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.592698Z","level":"info","event":" Iniciando as transformações.","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.593797Z","level":"info","event":"\n DataFrame criado com 1 linhas(s)","logger":"root","filename":"transform_data.py","lineno":48}
+{"timestamp":"2026-03-13T14:44:18.596231Z","level":"info","event":"\n Coluna 'weather' normalizada - 30 colunas","logger":"root","filename":"transform_data.py","lineno":62}
+{"timestamp":"2026-03-13T14:44:18.596377Z","level":"info","event":"\n Removendo colunas: ['weather', 'weather_icon', 'sys.type']","logger":"root","filename":"transform_data.py","lineno":66}
+{"timestamp":"2026-03-13T14:44:18.596971Z","level":"info","event":" Colunas removidas - 27 colunas restantes","logger":"root","filename":"transform_data.py","lineno":68}
+{"timestamp":"2026-03-13T14:44:18.597351Z","level":"info","event":"Colunas renomeadas.","logger":"root","filename":"transform_data.py","lineno":73}
+{"timestamp":"2026-03-13T14:44:18.600390Z","level":"info","event":"Colunas convetidas para datetime.","logger":"root","filename":"transform_data.py","lineno":80}
+{"timestamp":"2026-03-13T14:44:18.600527Z","level":"info","event":"Transformações concluidas!","logger":"root","filename":"transform_data.py","lineno":91}
+{"timestamp":"2026-03-13T14:44:18.633244Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-13T14:44:18.653016Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.653146Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:44:18.653406Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): transform>","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.570831Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-13T14:57:47.571692Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/weather_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-13T14:57:47.587790Z","level":"info","event":" conectado em postgres:5432/weather_data_pipeline","logger":"root","filename":"load_data.py","lineno":22}
+{"timestamp":"2026-03-13T14:57:47.598659Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:57:47.598835Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/weather_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-03-13T14:57:47.618386Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.618531Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.618665Z","level":"info","event":"Current task name:transform","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.618739Z","level":"info","event":"Dag name:weather_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.619905Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.619984Z","level":"info","event":" Iniciando as transformações.","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.621097Z","level":"info","event":"\n DataFrame criado com 1 linhas(s)","logger":"root","filename":"transform_data.py","lineno":48}
+{"timestamp":"2026-03-13T14:57:47.622885Z","level":"info","event":"\n Coluna 'weather' normalizada - 30 colunas","logger":"root","filename":"transform_data.py","lineno":62}
+{"timestamp":"2026-03-13T14:57:47.623023Z","level":"info","event":"\n Removendo colunas: ['weather', 'weather_icon', 'sys.type']","logger":"root","filename":"transform_data.py","lineno":66}
+{"timestamp":"2026-03-13T14:57:47.623624Z","level":"info","event":" Colunas removidas - 27 colunas restantes","logger":"root","filename":"transform_data.py","lineno":68}
+{"timestamp":"2026-03-13T14:57:47.624004Z","level":"info","event":"Colunas renomeadas.","logger":"root","filename":"transform_data.py","lineno":73}
+{"timestamp":"2026-03-13T14:57:47.626516Z","level":"info","event":"Colunas convetidas para datetime.","logger":"root","filename":"transform_data.py","lineno":80}
+{"timestamp":"2026-03-13T14:57:47.626609Z","level":"info","event":"Transformações concluidas!","logger":"root","filename":"transform_data.py","lineno":91}
+{"timestamp":"2026-03-13T14:57:47.653494Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-03-13T14:57:47.670599Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.670731Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-13T14:57:47.670962Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): transform>","logger":"task.stdout"}

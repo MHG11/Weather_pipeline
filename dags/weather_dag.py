@@ -20,7 +20,7 @@ url = f'https://api.openweathermap.org/data/2.5/weather?q=Palmas,BR&units=metric
 @dag(
     dag_id='weather_pipeline',
     default_args={
-        'owner': 'airflow',
+        'owner': 'mhg',
         'depends_on_past': False,
         'retries': 2,
         'retry_delay': timedelta(minutes=5)
@@ -48,7 +48,7 @@ def weather_pipeline():
     def load():
         import pandas as pd
         df = pd.read_parquet('/opt/airflow/data/temp_data.parquet')
-        load_weather_data('to_weather', df)
+        load_weather_data('pa_weather', df)
         
     
     extract() >> transform() >> load()
